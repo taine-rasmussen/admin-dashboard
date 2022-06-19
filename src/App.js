@@ -18,7 +18,7 @@ const App = () => {
               position='Top'
             ><button
               type='button'
-              className='text-3x1 p-3 hover:drop-shadow-x1 hover:bg-light-gray text-white'
+              className='text-3x1 p-3 hover:drop-shadow-xl hover:bg-light-gray text-white'
               style={{ background: 'blue', borderRadius: '50%' }}
             >
                 <FiSettings />
@@ -36,6 +36,15 @@ const App = () => {
               w-0
             </div>
           )}
+          <div className={
+            activeMenu
+              ? 'dark:bg-main-bg bg-main-bg min-h-screen md:ml-72 w-full'
+              : 'dark:bg-main-bg bg-main-bg min-h-screen  w-full flex-2'
+          }>
+            <div className='w-'>
+
+            </div>
+          </div>
         </div>
       </BrowserRouter>
     </div>
