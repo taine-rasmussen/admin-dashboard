@@ -1,5 +1,9 @@
-import react from 'react';
+import react, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { FiSettings } from 'react-cons/fi'
+import { ToolTipComponent } from '@syncfusion/ej2-react-popups'
 import './App.css';
+
 const App = () => {
 
   return (
