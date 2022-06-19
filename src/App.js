@@ -6,6 +6,8 @@ import './App.css';
 
 const App = () => {
 
+  const activeMenu = true;
+
   return (
     <div className="App">
       <BrowserRouter >
@@ -16,12 +18,24 @@ const App = () => {
               position='Top'
             ><button
               type='button'
-              className='text-3x1 p-3 hover:drop-shadow-x1 hover:bg-light-gray'
+              className='text-3x1 p-3 hover:drop-shadow-x1 hover:bg-light-gray text-white'
+              style={{ background: 'blue', borderRadius: '50%' }}
             >
                 <FiSettings />
               </button>
             </TooltipComponent>
           </div>
+          {activeMenu ? (
+            <div
+              className='w-72 fixed sidebar bg:bg-secondary-dark-bg bg-white'
+            >
+              sidebar
+            </div>
+          ) : (
+            <div className='w-0 dark:bg-secondary-dark-bg'>
+              w-0
+            </div>
+          )}
         </div>
       </BrowserRouter>
     </div>
